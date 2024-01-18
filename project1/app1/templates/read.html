@@ -1,0 +1,22 @@
+<html>
+    <head></head>
+    <body>
+        <h1> Welcome </h1>
+        <table border = "2">
+         <th>
+            <td> Student Name</td>
+            <td> Student Rollno</td>
+            <td> Student Email</td>
+            <td> Student Section</td>
+         </th> 
+        {% for d in data %}
+        <tr>
+            <td>{{d.name}}</td>
+            <td>{{d.rollno}}</td>
+            <td>{{d.email}}</td>
+            <td>{{d.section}}</td>    
+        </tr>
+        {% endfor %}
+        </table>        
+    </body>
+</html>

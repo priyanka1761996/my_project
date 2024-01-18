@@ -1,0 +1,12 @@
+<html>
+    <head>
+        <h1>Student Form</h1>
+    </head>
+    <body>
+        <form action"app1/create" method= 'POST'>
+            {% csrf_token %}
+             {{form}}
+        </form>
+        <input type ="Submit" value = "Submit" >
+    </body>
+</html>
